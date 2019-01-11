@@ -2,7 +2,7 @@
 from datetime import datetime, timedelta
 import datetime
 '''
-Pagando Horas:
+Pagando Horas: !ACERTADO!
 =>04/10/2018 : entrei as '08:00:00'
 =>05/10/2018:  entrei as '08:00:00'
 =>08/10/2018:  entrei as '07:30:00'
@@ -25,13 +25,14 @@ TOTAL ATÉ O MOMENTO DE: | 12:10:00  | *** No relatorio da Softhouse diz que fiz
 '''
 
 '''
-PAGANDO OUTRAS HORAS
+PAGANDO OUTRAS HORAS: !ACERTADO!
 =>29/11/2018:  entrei as '08:11:00'
 =>29/11/2018:  entrei as '08:12:00'
 =>04/12/2018:  entrei as '08:17:00'
 Paguei 50 minutos, foi feito a conta e Evandro me disse que falta pagar somente 46 minutos
 
 ...
+
 
 Pagar ... ainda falta 46 minutos
 =>05/12/2018:  entrei as '08:14:00'
