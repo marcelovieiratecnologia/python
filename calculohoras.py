@@ -57,6 +57,7 @@ Viagem que fiz para São Vicente sai de casa as 07:00 mas voltei era 18:20(acres
 =>11/01/2019:  entrei as '07:43:00'
 =>14/01/2019:  entrei as '07:33:00'
 
+
                          -----------
 TOTAL ATÉ O MOMENTO DE: | 9:15:00   | ***  ***
                          -----------
