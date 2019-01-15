@@ -49,6 +49,11 @@ Viagem que fiz para São Vicente sai de casa as 07:00 mas voltei era 18:20(acres
 =>26/12/2018:  entrei as '08:06:00'
 =>27/12/2018:  entrei as '08:13:00'
 =>28/12/2018:  entrei as '08:18:00'
+Mês de Dezembro fiz 3:56:00 + 50 minutos = 4:46:00 que fiz depois do horario, qdo fui para são vicente.
+++++++ ZERADO ++++++ Total de 4:46:00
+
+
+Janeiro de 2019
 =>02/01/2019:  entrei as '08:11:00'
 =>03/01/2019:  entrei as '08:00:00'
 =>07/01/2019:  entrei as '07:49:00'
@@ -56,10 +61,9 @@ Viagem que fiz para São Vicente sai de casa as 07:00 mas voltei era 18:20(acres
 =>10/01/2019:  entrei as '07:26:00'
 =>11/01/2019:  entrei as '07:43:00'
 =>14/01/2019:  entrei as '07:33:00'
-
-
+=>15/01/2019:  entrei as '07:36:00'
                          -----------
-TOTAL ATÉ O MOMENTO DE: | 9:15:00   | ***  ***
+TOTAL ATÉ O MOMENTO DE: | 06:13:00   | ***  ***
                          -----------
 '''
 
@@ -68,9 +72,8 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Horários que entrei mais cedo na Empresa
-listHrChegadas1=['07:00:00','07:52:00','07:57:00','08:08:00','08:06:00',
-                 '08:13:00','08:18:00','08:11:00','08:00:00','07:49:00',
-                 '07:29:00','07:26:00','07:43:00','07:33:00']
+listHrChegadas1=['08:11:00','08:00:00','07:49:00','07:29:00','07:26:00',
+                 '07:43:00','07:33:00','07:36:00']
 
 HrBanco=[] # Lista que será adicionado as Diferenças
 # CALCULA A DIFERENÇA ENTRE A HORA QUE ENTRO COM AS HORAS QUE CHEGUEI E GUARDA EM UMA LISTA
@@ -97,5 +100,5 @@ while x < tam:
 #print('valor de l é :   ', l)
 soma.append(l)
 print('------------------------------------------|         |')
-print('Total de Horas Pagas até o momento foi de: ', soma[0],  ' *** Somar 50 minutos que fiz depois do horario ***')
+print('Total de Horas Pagas até o momento foi de: ', soma[0],  ' *** ANOTAÇÔES:  ***')
 print('------------------------------------------|         |')
