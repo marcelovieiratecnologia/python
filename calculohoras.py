@@ -69,6 +69,7 @@ Janeiro de 2019
                         -----------
 TOTAL ATÉ O MOMENTO DE: | 06:13:00   | ***  ***
                          -----------
+
 '''
 
 HrEntrada='08:30:00' # Meu Horário de Entrada
