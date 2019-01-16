@@ -65,7 +65,7 @@ Janeiro de 2019
 =>16/01/2019:  entrei as '07:26:00'
 
                         -----------
-TOTAL ATÉ O MOMENTO DE: | 07:17:00   | ***##--  ##***
+TOTAL ATÉ O MOMENTO DE: | 07:17:00   | ***## Linha de teste  ##***
                          -----------
 
 '''
