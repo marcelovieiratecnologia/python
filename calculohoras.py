@@ -62,11 +62,10 @@ Janeiro de 2019
 =>11/01/2019:  entrei as '07:43:00'
 =>14/01/2019:  entrei as '07:33:00'
 =>15/01/2019:  entrei as '07:36:00'
-
-
+=>16/01/2019:  entrei as '07:26:00'
 
                         -----------
-TOTAL ATÉ O MOMENTO DE: | 06:13:00   | ***  ***
+TOTAL ATÉ O MOMENTO DE: | 07:17:00   | ***##--  ##***
                          -----------
 
 '''
@@ -77,7 +76,7 @@ HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Horários que entrei mais cedo na Empresa
 listHrChegadas1=['08:11:00','08:00:00','07:49:00','07:29:00','07:26:00',
-                 '07:43:00','07:33:00','07:36:00']
+                 '07:43:00','07:33:00','07:36:00','07:26:00']
 
 HrBanco=[] # Lista que será adicionado as Diferenças
 # CALCULA A DIFERENÇA ENTRE A HORA QUE ENTRO COM AS HORAS QUE CHEGUEI E GUARDA EM UMA LISTA
