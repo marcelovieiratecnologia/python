@@ -65,7 +65,7 @@ Janeiro de 2019
 =>16/01/2019:  entrei as '07:26:00'
 
                         -----------
-TOTAL ATÉ O MOMENTO DE: | 07:17:00   | ***## Linha de teste  ##***
+TOTAL ATÉ O MOMENTO DE: | 07:17:00   | ***## Anotações: ##***
                          -----------
 
 '''
@@ -103,5 +103,5 @@ while x < tam:
 #print('valor de l é :   ', l)
 soma.append(l)
 print('------------------------------------------|         |')
-print('Total de Horas Pagas até o momento foi de: ', soma[0],  ' *** ANOTAÇÔES:  ***')
+print('Total de Horas Pagas até o momento foi de: ', soma[0],  ' *** ##ANOTAÇÔES:  ##***')
 print('------------------------------------------|         |')
