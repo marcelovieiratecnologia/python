@@ -1,6 +1,7 @@
 Programa para meu uso pessoal e teste de GutHub
 
 1-Calcula e soma o tempo que fiz ANTES do meu horário de entrada na empresa.
+
 2-Calcula e soma o tempo que fiz DEPOIS do meu horário de saída na empresa.
 
 
