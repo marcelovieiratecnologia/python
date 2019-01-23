@@ -53,7 +53,7 @@ Mês de Dezembro fiz 3:56:00 + 50 minutos = 4:46:00 que fiz depois do horario, q
 ++++++ ZERADO ++++++ Total de 4:46:00
 
 
-Janeiro de 2019
+Janeiro de 2019 Entradas:
 =>02/01/2019:  entrei as '08:11:00'
 =>03/01/2019:  entrei as '08:00:00'
 =>07/01/2019:  entrei as '07:49:00'
@@ -66,46 +66,114 @@ Janeiro de 2019
 =>17/01/2019:  entrei as '07:35:00'
 =>18/01/2019:  entrei as '07:19:00'
 =>22/01/2019:  entrei as '07:37:00'
+=>23/01/2019:  entrei as '07:27:00'
 
                         -----------
 TOTAL ATÉ O MOMENTO DE: | 10:16:00   | ***## Anotações: ##***
                          -----------
 
 '''
-
-HrEntrada='08:30:00' # Meu Horário de Entrada
+HrEntrada = '08:30:00' # Meu Horário de Entrada
 h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
-# Horários que entrei mais cedo na Empresa
-listHrChegadas1=['08:11:00','08:00:00','07:49:00','07:29:00','07:26:00',
-                 '07:43:00','07:33:00','07:36:00','07:26:00','07:35:00',
-                 '07:19:00','07:37:00']
+# Lista com Horários que ENTREI mais CEDO na Empresa
+listHrChegadas=['08:11:00','08:00:00','07:49:00','07:29:00','07:26:00',
+                '07:43:00','07:33:00','07:36:00','07:26:00','07:35:00',
+                '07:19:00','07:37:00','07:27:00']
+
+HrSaida = '17:30:00' # Meu Horário de Saída
+h, m, s = (map(int, HrSaida.split(':')))
+HrSaida = datetime.timedelta(0,s,0,0,m,h)
+
+# Lista com Horários que SAÍ mais TARDE na Empresa
+
+listaHrSaidas=['00:00:00']
+
+lsCalculaDifEntrada = [] # Lista que será adicionado as Diferenças da entrada
+lsCalculaDifSaida = [] # Lista que será adicionado as Diferenças da Saída
 
 HrBanco=[] # Lista que será adicionado as Diferenças
+
+#@@@@@@   CALCULA ENTRADA @@@@@@@
 # CALCULA A DIFERENÇA ENTRE A HORA QUE ENTRO COM AS HORAS QUE CHEGUEI E GUARDA EM UMA LISTA
-for lhoras in listHrChegadas1:
+for lhoras in listHrChegadas:
     #Encontrando a diferença entre as horas
     h,m,s = (map(int, lhoras.split(':')))
     lhoras = datetime.timedelta(0,s,0,0,m,h)
     #print('type variável horas: ',type(horas))
     Dif = HrEntrada - lhoras
     #print('Total é :', Dif )
-    HrBanco.append(Dif)
+    lsCalculaDifEntrada.append(Dif)
 
-soma=[]
-tam=len(HrBanco)
+somaEntrada=[]
+tam=len(lsCalculaDifEntrada)
 #print(tam)
 x=0
 while x < tam:
     #print(x)
     if x == 0:
-        l = HrBanco[x]
+        l = lsCalculaDifEntrada[x]
     if x > 0:
-        l += +HrBanco[x]
+        l += +lsCalculaDifEntrada[x]
     x+=1
 #print('valor de l é :   ', l)
-soma.append(l)
-print('------------------------------------------|         |')
-print('Total de Horas Pagas até o momento foi de: ', soma[0],  ' *** ##ANOTAÇÔES:  ##***')
-print('------------------------------------------|         |')
+somaEntrada.append(l)
+print('-------------------------------------------------------------------')
+print('|                     Calulando Horas Entradas                     |          ')
+print('-------------------------------------------------------------------|         |')
+print('Total de Horas Pagas que fiz antes das 08:30 até o momento foi de:  ', somaEntrada[0],  ' *** ##ANOTAÇÔES ENTRADAS:  ##***')
+print('-------------------------------------------------------------------|         |')
+print()
+print()
+
+#@@@@@@   CALCULA SAIDA @@@@@@@
+# CALCULA A DIFERENÇA ENTRE A HORA QUE SAIO COM AS HORAS QUE SAÍ E GUARDA EM UMA LISTA
+
+if listaHrSaidas[0] != '00:00:00': # Se estiver com valor '00:00:00' é por que não tive Horas extras depois das 17:30.
+    for lhoras in listaHrSaidas:
+        #Encontrando a diferença entre as horas
+        h,m,s = (map(int, lhoras.split(':')))
+        lhoras = datetime.timedelta(0,s,0,0,m,h)
+        #print('type variável horas: ',type(horas))
+        Dif = lhoras - HrSaida
+        #print('Total é :', Dif )
+        lsCalculaDifSaida.append(Dif)
+
+    somaSaida=[]
+    tam=len(lsCalculaDifSaida)
+    #print(tam)
+    x=0
+    while x < tam:
+        #print(x)
+        if x == 0:
+            l = lsCalculaDifSaida[x]
+        if x > 0:
+            l += +lsCalculaDifSaida[x]
+        x+=1
+    #print('valor de l é :   ', l)
+    somaSaida.append(l)
+
+if listaHrSaidas[0] != '00:00:00': # Se estiver com valor '00:00:00' é por que não tive Horas extras depois das 17:30.
+    print('-------------------------------------------------------------------')
+    print('|                     Calulando Horas Saídas                       |          ')
+    print('-------------------------------------------------------------------|         |')
+    print('Total de Horas Pagas que fiz depois das 17:30 até o momento foi de: ', somaSaida[0],  ' *** ##ANOTAÇÔES SAÍDAS:  ##***')
+    print('-------------------------------------------------------------------|         |')
+
+print()
+print()
+print()
+
+if listaHrSaidas[0] != '00:00:00':
+    print('-------------------------------------------------------------------')
+    print('|                     TOTAL DE HORAS EXTRAS                        |          ')
+    print('-------------------------------------------------------------------|         |')
+    print('           TOTAL DE HORAS ANTES DA ENTRADA E DEPOIS DA SAÍDA :      ' ,somaEntrada[0] + somaSaida[0],  ' *** ##ANOTAÇÔES FINAIS:  ##***')
+    print('-------------------------------------------------------------------|         |')
+else:
+    print('-------------------------------------------------------------------')
+    print('|                     TOTAL DE HORAS EXTRAS                        |          ')
+    print('-------------------------------------------------------------------|         |')
+    print('           TOTAL DE HORAS ANTES DA ENTRADA E DEPOIS DA SAÍDA :      ' ,somaEntrada[0],  ' *** ##ANOTAÇÔES FINAIS:  ##***')
+    print('-------------------------------------------------------------------|         |')
