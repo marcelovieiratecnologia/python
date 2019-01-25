@@ -51,8 +51,9 @@ Viagem que fiz para São Vicente sai de casa as 07:00 mas voltei era 18:20(acres
 =>28/12/2018:  entrei as '08:18:00'
 Mês de Dezembro fiz 3:56:00 + 50 minutos = 4:46:00 que fiz depois do horario, qdo fui para são vicente.
 ++++++ ZERADO ++++++ Total de 4:46:00
+'''
 
-
+'''
 Janeiro de 2019 Entradas:
 =>02/01/2019:  entrei as '08:11:00'
 =>03/01/2019:  entrei as '08:00:00'
