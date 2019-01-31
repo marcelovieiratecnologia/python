@@ -1,92 +1,60 @@
 
 from datetime import datetime, timedelta
 import datetime
+
 '''
 Pagando Horas: !ZERADO!
-=>04/10/2018 : entrei as '08:00:00'
-=>05/10/2018:  entrei as '08:00:00'
-=>08/10/2018:  entrei as '07:30:00'
-=>09/10/2018:  entrei as '07:30:00'
-=>10/10/2018:  entrei as '08:05:00'
-=>11/10/2019:  entrei as '07:45:00'
-=>15/10/2018:  entrei as '07:55:00'
-=>17/10/2018:  entrei as '07:44:00'
-=>18/10/2018:  entrei as '07:43:00'
-=>19/10/2018:  entrei as '07:27:00'
-=>22/10/2018:  entrei as '07:34:00'
-=>23/10/2018:  entrei as '07:17:00'
-=>24/10/2018:  entrei as '07:23:00'
-=>25/10/2018:  entrei as '08:00:00'
-
+=>04/10/2018 : entrei as '08:00:00'=>05/10/2018:  entrei as '08:00:00'=>08/10/2018:  entrei as '07:30:00'=>09/10/2018:  entrei as '07:30:00'=>10/10/2018:  entrei as '08:05:00'=>11/10/2019:  entrei as '07:45:00'=>15/10/2018:  entrei as '07:55:00'=>17/10/2018:  entrei as '07:44:00'=>18/10/2018:  entrei as '07:43:00'=>19/10/2018:  entrei as '07:27:00'=>22/10/2018:  entrei as '07:34:00'=>23/10/2018:  entrei as '07:17:00'=>24/10/2018:  entrei as '07:23:00'=>25/10/2018:  entrei as '08:00:00'
 @@@ aqui até o momento paguei o que deveria que no caso é 12:00 @@@
                          -----------
 TOTAL ATÉ O MOMENTO DE: | 12:10:00  | *** No relatorio da Softhouse diz que fiz apenas 07horas e pouco de Horas Extras ***
                          -----------
+++++++ ZERADO ++++++
 '''
 
 '''
 PAGANDO OUTRAS HORAS: !ZERADO!
-=>29/11/2018:  entrei as '08:11:00'
-=>29/11/2018:  entrei as '08:12:00'
-=>04/12/2018:  entrei as '08:17:00'
+=>29/11/2018:  entrei as '08:11:00'=>29/11/2018:  entrei as '08:12:00'=>04/12/2018:  entrei as '08:17:00'
 Paguei 50 minutos, foi feito a conta e Evandro me disse que falta pagar somente 46 minutos
-
-...
-
-
-Pagar ... ainda falta 46 minutos
-=>05/12/2018:  entrei as '08:14:00'
-=>06/12/2018:  entrei as '07:58:00'
 ++++++ ZERADO ++++++
 
+Pagar ... ainda falta 46 minutos
+=>05/12/2018:  entrei as '08:14:00'=>06/12/2018:  entrei as '07:58:00'
+++++++ ZERADO ++++++
 '''
 
 '''
 Viagem que fiz para São Vicente sai de casa as 07:00 mas voltei era 18:20(acrescentar 50 minutos que equivale horario a mais que fiz depois do horario que saiu da Soft)
-=>18/12/2018:  entrei as '07:52:00'
-=>19/12/2018:  entrei as '07:57:00'
-=>20/12/2018:  entrei as '08:08:00'
-=>26/12/2018:  entrei as '08:06:00'
-=>27/12/2018:  entrei as '08:13:00'
-=>28/12/2018:  entrei as '08:18:00'
+=>18/12/2018:  entrei as '07:52:00'=>19/12/2018:  entrei as '07:57:00'=>20/12/2018:  entrei as '08:08:00'=>26/12/2018:  entrei as '08:06:00'=>27/12/2018:  entrei as '08:13:00'=>28/12/2018:  entrei as '08:18:00'
 Mês de Dezembro fiz 3:56:00 + 50 minutos = 4:46:00 que fiz depois do horario, qdo fui para são vicente.
 ++++++ ZERADO ++++++ Total de 4:46:00
 '''
 
 '''
+FECHADO
 Janeiro de 2019 Entradas:
-=>02/01/2019:  entrei as '08:11:00'
-=>03/01/2019:  entrei as '08:00:00'
-=>07/01/2019:  entrei as '07:49:00'
-=>08/01/2019:  entrei as '07:29:00'
-=>10/01/2019:  entrei as '07:26:00'
-=>11/01/2019:  entrei as '07:43:00'
-=>14/01/2019:  entrei as '07:33:00'
-=>15/01/2019:  entrei as '07:36:00'
-=>16/01/2019:  entrei as '07:26:00'
-=>17/01/2019:  entrei as '07:35:00'
-=>18/01/2019:  entrei as '07:19:00'
-=>22/01/2019:  entrei as '07:37:00'
-=>23/01/2019:  entrei as '07:27:00'
-=>24/01/2019:  entrei as '07:27:00'
-=>28/01/2019:  entrei as '07:19:00'
-=>29/01/2019:  entrei as '07:26:00'
-=>30/01/2019:  entrei as '07:53:00'
+=>02/01/2019:  entrei as '08:11:00'=>03/01/2019:  entrei as '08:00:00'=>07/01/2019:  entrei as '07:49:00'=>08/01/2019:  entrei as '07:29:00'=>10/01/2019:  entrei as '07:26:00'=>11/01/2019:  entrei as '07:43:00'=>14/01/2019:  entrei as '07:33:00'=>15/01/2019:  entrei as '07:36:00'=>16/01/2019:  entrei as '07:26:00'=>17/01/2019:  entrei as '07:35:00'=>18/01/2019:  entrei as '07:19:00'=>22/01/2019:  entrei as '07:37:00'=>23/01/2019:  entrei as '07:27:00'=>24/01/2019:  entrei as '07:27:00'=>28/012019:  entrei as '07:19:00'=>29/01/2019:  entrei as '07:26:00'=>30/01/2019:  entrei as '07:53:00'=>31/01/2019:  entrei as '07:37:00'
+++++++ ZERADO ++++++ Total de 16:07:00
+'''
 
-                        -----------
-TOTAL ATÉ O MOMENTO DE: | 15:14:00   | ***## Anotações: ##***
+
+'''
+FEVEREIRO
+
+
+                         -----------
+TOTAL ATÉ O MOMENTO DE: | 00:00:00   | ***## Anotações: ##***
                          -----------
 
 '''
+
+
 HrEntrada = '08:30:00' # Meu Horário de Entrada
 h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['08:11:00','08:00:00','07:49:00','07:29:00','07:26:00',
-                '07:43:00','07:33:00','07:36:00','07:26:00','07:35:00',
-                '07:19:00','07:37:00','07:27:00','07:27:00','07:19:00',
-                '07:26:00','07:53:00']
+listHrChegadas=[]
 
 HrSaida = '17:30:00' # Meu Horário de Saída
 h, m, s = (map(int, HrSaida.split(':')))
