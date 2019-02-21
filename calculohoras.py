@@ -45,16 +45,12 @@ FEVEREIRO
 '''
 
 '''
-MARÇO
-OBS: Nesse mês preciso fazer apenas '' Horas, segundo meu banco de horas tenho '' Horas e vou pagar '08:00' Horas referente ao dia 04/03 véspera de Carnanval
-
 =>00/03/2019:  entrei as '00:00:00'
 
                          -----------
 TOTAL ATÉ O MOMENTO DE: | 00:00:00   | ***## Anotações:  ##***
                          -----------
 '''
-
 
 HrEntrada = '08:30:00' # Meu Horário de Entrada
 h, m, s = (map(int, HrEntrada.split(':')))
