@@ -53,7 +53,6 @@ OBS: Nesse mês preciso fazer apenas '' Horas, segundo meu banco de horas tenho 
                          -----------
 TOTAL ATÉ O MOMENTO DE: | 00:00:00   | ***## Anotações:  ##***
                          -----------
-
 '''
 
 
