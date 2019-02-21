@@ -40,11 +40,18 @@ Janeiro de 2019 Entradas:
 
 '''
 FEVEREIRO
-=>01/02/2019:  entrei as '07:21:00'
-=>05/02/2019:  entrei as '07:20:00'
+=>01/02/2019:  entrei as '07:21:00'=>05/02/2019:  entrei as '07:20:00'
+++++++ ZERADO ++++++ Total de 02:19:00
+'''
+
+'''
+MARÇO
+OBS: Nesse mês preciso fazer apenas '' Horas, segundo meu banco de horas tenho '' Horas e vou pagar '08:00' Horas referente ao dia 04/03 véspera de Carnanval
+
+=>00/03/2019:  entrei as '00:00:00'
 
                          -----------
-TOTAL ATÉ O MOMENTO DE: | 02:19:00   | ***## Anotações: ##***
+TOTAL ATÉ O MOMENTO DE: | 00:00:00   | ***## Anotações:  ##***
                          -----------
 
 '''
@@ -55,7 +62,7 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['07:21:00','07:20:00']
+listHrChegadas=['00:00:00']
 
 HrSaida = '17:30:00' # Meu Horário de Saída
 h, m, s = (map(int, HrSaida.split(':')))
