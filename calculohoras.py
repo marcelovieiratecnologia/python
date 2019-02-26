@@ -40,9 +40,10 @@ Janeiro de 2019 Entradas:
 
 '''
 FEVEREIRO
-=>01/02/2019:  entrei as '07:21:00'=>05/02/2019:  entrei as '07:20:00'
+=>01/02/2019:  entrei as '07:21:00' =>05/02/2019:  entrei as '07:20:00'
 ++++++ ZERADO ++++++ Total de 02:19:00
 '''
+
 
 '''
 =>00/03/2019:  entrei as '00:00:00'
