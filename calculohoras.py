@@ -42,13 +42,9 @@ FEVEREIRO
 ++++++ ZERADO ++++++ Total de 04:37:00
 '''
 
-
-
-
 '''
-
-=>00/03/2019:  entrei as '00:00:00'
-
+DEZEMBRO
+=>05/12/2019:  entrei as '07:31:00'
                          -----------
 TOTAL ATÉ O MOMENTO DE: | 00:00:00   | ***## Anotações:  ##***
                          -----------
@@ -59,7 +55,7 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['07:21:00','07:20:00','07:22:00','07:20:00']
+listHrChegadas=['07:31:00']
 
 HrSaida = '17:30:00' # Meu Horário de Saída
 h, m, s = (map(int, HrSaida.split(':')))
@@ -106,7 +102,7 @@ print('-------------------------------------------------------------------|     
 print()
 print()
 
-#@@@@@@   CALCULA SAIDA @@@@@@@
+#@@@@@@   CALCULA SAIDA  @@@@@@@
 # CALCULA A DIFERENÇA ENTRE A HORA QUE SAIO COM AS HORAS QUE SAÍ E GUARDA EM UMA LISTA
 
 if listaHrSaidas[0] != '00:00:00': # Se estiver com valor '00:00:00' é por que não tive Horas extras depois das 17:30.
