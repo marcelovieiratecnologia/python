@@ -44,9 +44,13 @@ FEVEREIRO
 
 '''
 DEZEMBRO
-=>05/12/2019:  entrei as '07:31:00'
+=>05/12/2019:  Entrada as '07:31:00'
+=>06/12/2019:  Entrada as '08:08:00'
+=>09/12/2019:  Entrada as '07:32:00'
+=>10/12/2019:  Entrada as '07:43:00'
+=>16/12/2019:  Saida as '20:58:00'
                          -----------
-TOTAL ATÉ O MOMENTO DE: | 00:00:00   | ***## Anotações:  ##***
+TOTAL ATÉ O MOMENTO DE: |  6:34:00   | ***## Anotações:  As Horas a mais que fiz, contando o que entrei antes e saí depois do meu horário  ##***
                          -----------
 '''
 
@@ -55,7 +59,7 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['07:31:00']
+listHrChegadas=['07:31:00','08:08:00','07:32:00','07:43:00']
 
 HrSaida = '17:30:00' # Meu Horário de Saída
 h, m, s = (map(int, HrSaida.split(':')))
@@ -63,7 +67,7 @@ HrSaida = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que SAÍ mais TARDE na Empresa
 
-listaHrSaidas=['00:00:00']
+listaHrSaidas=['20:58:00']
 
 lsCalculaDifEntrada = [] # Lista que será adicionado as Diferenças da entrada
 lsCalculaDifSaida = [] # Lista que será adicionado as Diferenças da Saída
@@ -97,7 +101,7 @@ somaEntrada.append(l)
 print('-------------------------------------------------------------------')
 print('|                     Calulando Horas Entradas                     |          ')
 print('-------------------------------------------------------------------|         |')
-print('Total de Horas Pagas que fiz antes das 08:30 até o momento foi de:  ', somaEntrada[0],  ' *** ##ANOTAÇÔES ENTRADAS:  ##***')
+print('Total de Horas Pagas que fiz antes das 08:30 até o momento foi de:  ', somaEntrada[0],  ' *** ##ANOTAÇÔES ENTRADAS: ##***')
 print('-------------------------------------------------------------------|         |')
 print()
 print()
@@ -133,7 +137,7 @@ if listaHrSaidas[0] != '00:00:00': # Se estiver com valor '00:00:00' é por que 
     print('-------------------------------------------------------------------')
     print('|                     Calulando Horas Saídas                       |          ')
     print('-------------------------------------------------------------------|         |')
-    print('Total de Horas Pagas que fiz depois das 17:30 até o momento foi de: ', somaSaida[0],  ' *** ##ANOTAÇÔES SAÍDAS:  ##***')
+    print('Total de Horas Pagas que fiz depois das 17:30 até o momento foi de: ', somaSaida[0],  ' *** ## ANOTAÇÔES SAÍDAS: ##***')
     print('-------------------------------------------------------------------|         |')
 
 print()
@@ -144,11 +148,11 @@ if listaHrSaidas[0] != '00:00:00':
     print('-------------------------------------------------------------------')
     print('|                     TOTAL DE HORAS EXTRAS                        |          ')
     print('-------------------------------------------------------------------|         |')
-    print('           TOTAL DE HORAS ANTES DA ENTRADA E DEPOIS DA SAÍDA :      ' ,somaEntrada[0] + somaSaida[0],  ' *** ##ANOTAÇÔES FINAIS:  ##***')
+    print('           TOTAL DE HORAS ANTES DA ENTRADA E DEPOIS DA SAÍDA :      ' ,somaEntrada[0] + somaSaida[0],  ' *** ## ANOTAÇÔES FINAIS: As Horas a mais que fiz, contando o que entrei antes e saí depois do meu horário ##***')
     print('-------------------------------------------------------------------|         |')
 else:
     print('-------------------------------------------------------------------')
     print('|                     TOTAL DE HORAS EXTRAS                        |          ')
     print('-------------------------------------------------------------------|         |')
-    print('           TOTAL DE HORAS ANTES DA ENTRADA E DEPOIS DA SAÍDA :      ' ,somaEntrada[0],  ' *** ##ANOTAÇÔES FINAIS:  ##***')
+    print('           TOTAL DE HORAS ANTES DA ENTRADA E DEPOIS DA SAÍDA :      ' ,somaEntrada[0],  ' *** ## ANOTAÇÔES FINAIS:   ##***')
     print('-------------------------------------------------------------------|         |')
