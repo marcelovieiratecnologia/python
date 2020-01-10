@@ -49,17 +49,32 @@ DEZEMBRO
 =>09/12/2019:  Entrada as '07:32:00'
 =>10/12/2019:  Entrada as '07:43:00'
 =>16/12/2019:  Saida as '20:58:00'
+=>19/12/2019:  Entrada as '07:32:00' => Foi o dia em que foi passado o SIGS e Sisfarma para Nuvem (LocalWeb)
+=>20/12/2019:  Entrada as '08:14:00'
+=>23/12/2019:  Entrada as '07:32:00'
+=>26/12/2019:  Entrada as '07:14:00'
+=>27/12/2019:  Entrada as '07:53:00'
                          -----------
-TOTAL ATÉ O MOMENTO DE: |  6:34:00   | ***## Anotações:  As Horas a mais que fiz, contando o que entrei antes e saí depois do meu horário  ##***
+TOTAL ATÉ O MOMENTO DE: |  10:39:00   | ***## Anotações:  As Horas a mais que fiz, contando o que entrei antes e saí depois do meu horário  ##***
                          -----------
 '''
+'''
+DEZEMBRO
+=>08/01/2020:  Entrada as '06:53:00'
+=>09/01/2020:  Saída as '19:26:00'
+
+                         -----------
+TOTAL ATÉ O MOMENTO DE: |  3:33:00   | ***## Anotações:    ##***
+                         -----------
+'''
+
 
 HrEntrada = '08:30:00' # Meu Horário de Entrada
 h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['07:31:00','08:08:00','07:32:00','07:43:00']
+listHrChegadas=['06:53:00']
 
 HrSaida = '17:30:00' # Meu Horário de Saída
 h, m, s = (map(int, HrSaida.split(':')))
@@ -67,7 +82,7 @@ HrSaida = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que SAÍ mais TARDE na Empresa
 
-listaHrSaidas=['20:58:00']
+listaHrSaidas=['19:26:00']
 
 lsCalculaDifEntrada = [] # Lista que será adicionado as Diferenças da entrada
 lsCalculaDifSaida = [] # Lista que será adicionado as Diferenças da Saída
