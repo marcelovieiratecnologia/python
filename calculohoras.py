@@ -59,14 +59,16 @@ TOTAL ATÉ O MOMENTO DE: |  10:39:00   | ***## Anotações:  As Horas a mais que
                          -----------
 '''
 '''
-DEZEMBRO
+JANEIRO - 2020
 =>08/01/2020:  Entrada as '06:53:00'
 =>08/01/2020:  Saída as '17:43:00'
 =>09/01/2020:  Entrada as '07:51:00'
 =>09/01/2020:  Saída as '19:26:00'
+=>15/01/2020:  Entrada as '06:42:00'
+=>16/01/2020:  Saída as '19:38:00'
 
                          -----------
-TOTAL ATÉ O MOMENTO DE: |  4:25:00   | ***## Anotações:    ##***
+TOTAL ATÉ O MOMENTO DE: | 8:21:00   | ***## Anotações:    ##***
                          -----------
 '''
 
@@ -76,7 +78,7 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['06:53:00','07:51:00']
+listHrChegadas=['06:53:00','07:51:00','06:42:00']
 
 HrSaida = '17:30:00' # Meu Horário de Saída
 h, m, s = (map(int, HrSaida.split(':')))
@@ -84,7 +86,7 @@ HrSaida = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que SAÍ mais TARDE na Empresa
 
-listaHrSaidas=['19:26:00','17:43:00']
+listaHrSaidas=['19:26:00','17:43:00','19:38:00']
 
 lsCalculaDifEntrada = [] # Lista que será adicionado as Diferenças da entrada
 lsCalculaDifSaida = [] # Lista que será adicionado as Diferenças da Saída
