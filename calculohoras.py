@@ -67,10 +67,26 @@ JANEIRO - 2020
 =>15/01/2020:  Entrada as '06:42:00'
 =>16/01/2020:  Saída as '19:38:00'
 
+['06:53:00','07:51:00','06:42:00']
                          -----------
 TOTAL ATÉ O MOMENTO DE: | 8:21:00   | ***## Anotações:    ##***
                          -----------
 '''
+
+'''
+FEVEREIRO - 2020
+=>01/02/2020:  Entrada as '17:30:00' as '19:30' ----@@@@ Trabalhei no Sabado no Projeto de Educação @@@ ---
+
+                         -----------
+TOTAL ATÉ O MOMENTO DE: | 00:00:00   | ***## Anotações:    ##***
+                         -----------
+'''
+
+
+
+from datetime import datetime, timedelta
+import datetime
+
 
 
 HrEntrada = '08:30:00' # Meu Horário de Entrada
@@ -78,15 +94,15 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['06:53:00','07:51:00','06:42:00']
+listHrChegadas=['00:00:00']
+
 
 HrSaida = '17:30:00' # Meu Horário de Saída
 h, m, s = (map(int, HrSaida.split(':')))
 HrSaida = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que SAÍ mais TARDE na Empresa
-
-listaHrSaidas=['19:26:00','17:43:00','19:38:00']
+listaHrSaidas=['19:30:00']
 
 lsCalculaDifEntrada = [] # Lista que será adicionado as Diferenças da entrada
 lsCalculaDifSaida = [] # Lista que será adicionado as Diferenças da Saída
@@ -95,18 +111,22 @@ HrBanco=[] # Lista que será adicionado as Diferenças
 
 #@@@@@@   CALCULA ENTRADA @@@@@@@
 # CALCULA A DIFERENÇA ENTRE A HORA QUE ENTRO COM AS HORAS QUE CHEGUEI E GUARDA EM UMA LISTA
+
 for lhoras in listHrChegadas:
     #Encontrando a diferença entre as horas
     h,m,s = (map(int, lhoras.split(':')))
     lhoras = datetime.timedelta(0,s,0,0,m,h)
     #print('type variável horas: ',type(horas))
-    Dif = HrEntrada - lhoras
+    if listHrChegadas[0] != '00:00:00': # Se houver horario de entrada calculo a diferença
+        Dif = HrEntrada - lhoras
+    else:
+        Dif = lhoras
     #print('Total é :', Dif )
     lsCalculaDifEntrada.append(Dif)
 
 somaEntrada=[]
 tam=len(lsCalculaDifEntrada)
-#print(tam)
+# print(tam)
 x=0
 while x < tam:
     #print(x)
@@ -117,13 +137,15 @@ while x < tam:
     x+=1
 #print('valor de l é :   ', l)
 somaEntrada.append(l)
-print('-------------------------------------------------------------------')
-print('|                     Calulando Horas Entradas                     |          ')
-print('-------------------------------------------------------------------|         |')
-print('Total de Horas Pagas que fiz antes das 08:30 até o momento foi de:  ', somaEntrada[0],  ' *** ##ANOTAÇÔES ENTRADAS: ##***')
-print('-------------------------------------------------------------------|         |')
-print()
-print()
+
+if listHrChegadas[0] != '00:00:00':
+    print('-------------------------------------------------------------------')
+    print('|                     Calulando Horas Entradas                     |          ')
+    print('-------------------------------------------------------------------|         |')
+    print('Total de Horas Pagas que fiz antes das 08:30 até o momento foi de:  ', somaEntrada[0],  ' *** ##ANOTAÇÔES ENTRADAS: ##***')
+    print('-------------------------------------------------------------------|         |')
+    print()
+    print()
 
 #@@@@@@   CALCULA SAIDA  @@@@@@@
 # CALCULA A DIFERENÇA ENTRE A HORA QUE SAIO COM AS HORAS QUE SAÍ E GUARDA EM UMA LISTA
@@ -156,7 +178,7 @@ if listaHrSaidas[0] != '00:00:00': # Se estiver com valor '00:00:00' é por que 
     print('-------------------------------------------------------------------')
     print('|                     Calulando Horas Saídas                       |          ')
     print('-------------------------------------------------------------------|         |')
-    print('Total de Horas Pagas que fiz depois das 17:30 até o momento foi de: ', somaSaida[0],  ' *** ## ANOTAÇÔES SAÍDAS: ##***')
+    print('Total de Horas Pagas que fiz depois das 17:30 até o momento foi de: ', somaSaida[0],  ' *** ## ANOTAÇÔES SAÍDAS: FIZ 2 horas Sábado 01/02/20, Projeto Educação ##***')
     print('-------------------------------------------------------------------|         |')
 
 print()
