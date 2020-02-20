@@ -79,9 +79,10 @@ FEVEREIRO - 2020
 =>17/02/2020:  Entrada as '07:40:00' ---
 =>18/02/2020:  Entrada as '07:27:00' ---
 =>19/02/2020:  Entrada as '07:49:00' ---
+=>20/02/2020:  Entrada as '07:33:00' ---
 
                          -----------
-TOTAL ATÉ O MOMENTO DE: | 04:34:00   | ***## Anotações:    ##***
+TOTAL ATÉ O MOMENTO DE: | 05:31:00   | ***## Anotações:    ##***
                          -----------
 '''
 
@@ -97,7 +98,7 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['07:40:00','07:27:00','07:49:00']
+listHrChegadas=['07:40:00','07:27:00','07:49:00','07:33:00']
 
 
 HrSaida = '17:30:00' # Meu Horário de Saída
