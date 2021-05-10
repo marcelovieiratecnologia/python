@@ -98,7 +98,7 @@ MAIO - 2021
 =>10/05/2021:  Entrada as '08:00:00' ---
 
                          -----------
-TOTAL ATÉ O MOMENTO DE: | 0:37:00    | ***## Anotações:    ##***
+TOTAL ATÉ O MOMENTO DE: | 1:07:00    | ***## Anotações:    ##***
                          ---------
 						 -
 '''
