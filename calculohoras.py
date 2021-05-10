@@ -91,6 +91,18 @@ TOTAL ATÉ O MOMENTO DE: | 09:04:00   | ***## Anotações:    ##***
 '''
 
 
+'''
+MAIO - 2021
+=>06/05/2021:  Entrada as '08:11:00' ---
+=>07/05/2021:  Entrada as '08:12:00' ---
+=>10/05/2021:  Entrada as '08:00:00' ---
+
+                         -----------
+TOTAL ATÉ O MOMENTO DE: | 0:37:00    | ***## Anotações:    ##***
+                         ---------
+						 -
+'''
+
 
 from datetime import datetime, timedelta
 import datetime
@@ -102,7 +114,7 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['07:40:00','07:27:00','07:49:00','07:33:00','07:31:00','08:01:00','07:25:00','07:30:00']
+listHrChegadas=['08:11:00','08:12:00','08:00:00']
 
 
 HrSaida = '17:30:00' # Meu Horário de Saída
@@ -110,7 +122,7 @@ h, m, s = (map(int, HrSaida.split(':')))
 HrSaida = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que SAÍ mais TARDE na Empresa
-listaHrSaidas=['19:30:00']
+listaHrSaidas=['00:00:00']
 
 lsCalculaDifEntrada = [] # Lista que será adicionado as Diferenças da entrada
 lsCalculaDifSaida = [] # Lista que será adicionado as Diferenças da Saída
