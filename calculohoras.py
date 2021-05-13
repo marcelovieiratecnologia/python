@@ -98,9 +98,10 @@ MAIO - 2021
 =>10/05/2021:  Entrada as '08:00:00' ---
 =>11/05/2021:  Entrada as '08:14:00' ---
 =>12/05/2021:  Entrada as '08:16:00' ---
+=>13/05/2021:  Entrada as '08:15:00' ---
 
                          -----------
-TOTAL ATÉ O MOMENTO DE: |  1:37:00  | ***## Anotações:    ##***
+TOTAL ATÉ O MOMENTO DE: |  1:52:00  | ***## Anotações:    ##***
                          -----------
 '''
 
@@ -115,7 +116,7 @@ h, m, s = (map(int, HrEntrada.split(':')))
 HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
-listHrChegadas=['08:11:00','08:12:00','08:00:00','08:14:00','08:16:00']
+listHrChegadas=['08:11:00','08:12:00','08:00:00','08:14:00','08:16:00','08:15:00']
 
 
 HrSaida = '17:30:00' # Meu Horário de Saída
