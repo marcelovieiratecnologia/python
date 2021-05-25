@@ -1,4 +1,4 @@
-
+# coding: utf-8
 from datetime import datetime, timedelta
 import datetime
 
@@ -104,9 +104,10 @@ MAIO - 2021
 =>20/05/2021:  Entrada as '08:12:00' ---
 =>21/05/2021:  Entrada as '08:02:00' ---
 =>24/05/2021:  Entrada as '08:01:00' ---
+=>25/05/2021:  Entrada as '08:23:00' ---
 
                          -----------
-TOTAL ATÉ O MOMENTO DE: |  3:52:00  | ***## Anotações:    ##***
+TOTAL ATÉ O MOMENTO DE: |  3:59:00  | ***## Anotações:    ##***
                          -----------
 '''
 
@@ -122,7 +123,7 @@ HrEntrada = datetime.timedelta(0,s,0,0,m,h)
 
 # Lista com Horários que ENTREI mais CEDO na Empresa
 listHrChegadas=['08:11:00','08:12:00','08:00:00','08:14:00','08:16:00','08:15:00','08:10:00','08:05:00','08:12:00',
-				'08:02:00','08:01:00']
+				'08:02:00','08:01:00','08:23:00',]
 
 
 HrSaida = '17:30:00' # Meu Horário de Saída
